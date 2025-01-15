@@ -39,11 +39,11 @@ function App() {
         (user === 2 && bot === 1) ||
         (user === 3 && bot === 2)
       ) {
+        setHappy(true);
         setWinCount((state) => (state = state + 1));
       } else {
         setLoseCount((state) => (state = state + 1));
       }
-      setHappy(true);
     }, 3000);
 
     setTimeout(() => {
