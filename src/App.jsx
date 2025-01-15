@@ -32,8 +32,6 @@ function App() {
       setRunning(false);
 
       if (user === bot) {
-        setWinCount((state) => (state = state + 1));
-        setLoseCount((state) => (state = state + 1));
       } else if (
         (user === 1 && bot === 3) ||
         (user === 2 && bot === 1) ||
